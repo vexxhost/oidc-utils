@@ -44,6 +44,6 @@ func main() {
 		panic(err)
 	}
 
-  // Do something with `document` or store `document.RawData`.
+	// Do something with `document` or store `document.RawData`.
 }
 ```
