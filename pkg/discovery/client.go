@@ -34,7 +34,6 @@ func DocumentFromIssuer(issuer string) (*Document, error) {
 	}
 
 	decoder := json.NewDecoder(bytes.NewReader(body))
-	decoder.DisallowUnknownFields()
 
 	err = decoder.Decode(&document)
 	if err != nil {

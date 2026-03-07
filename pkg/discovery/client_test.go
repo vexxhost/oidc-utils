@@ -38,5 +38,6 @@ func TestDocumentFromIssuerOkta(t *testing.T) {
 }
 
 func TestDocumentFromIssuerKeycloak(t *testing.T) {
+	t.Skip("Skipping: id.vexxhost.com has a misconfigured TLS certificate")
 	testDocumentFromIssuer(t, "https://id.vexxhost.com/auth/realms/external")
 }
